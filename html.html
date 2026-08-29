@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="kepala">
+      <h1 class="nama-blog">Simple Blog</h1>
+      <p class="keterangan">Tempat sederhana untuk membuat artikel</p>
+    </header>
+
+    <main class="wadah">
+      <!-- form -->
+      <section class="kotak-form">
+        <h2 class="judul-bagian" id="judul-form">Tambah Artikel</h2>
+
+        <form id="form-artikel">
+          <input type="hidden" id="id-artikel" />
+
+          <div class="kotak-input">
+            <label for="judul-artikel"> Judul </label>
+
+            <input
+              type="text"
+              id="judul-artikel"
+              placeholder="Masukkan judul artikel"
+              required
+            />
+          </div>
+
+          <div class="kotak-input">
+            <label for="isi-artikel"> Isi Artikel </label>
+
+            <textarea
+              id="isi-artikel"
+              rows="6"
+              placeholder="Masukkan isi artikel"
+              required
+            ></textarea>
+          </div>
+
+          <div class="kotak-tombol">
+            <button type="submit" id="tombol-submit" class="tombol tambah">
+              Tambah Artikel
+            </button>
+
+            <button type="button" id="tombol-batal" class="tombol batal">
+              Batal
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- search -->
+      <section class="kotak-cari">
+        <input type="text" id="cari" placeholder="Cari artikel..." />
+      </section>
+
+      <!-- daftar artikel -->
+      <section class="kotak-artikel">
+        <h2 class="judul-bagian">Daftar Artikel</h2>
+
+        <p id="loading">Loading articles...</p>
+
+        <p id="error"></p>
+
+        <div id="daftar"></div>
+      </section>
+    </main>
+
+    <script src="js.js"></script>
+  </body>
+</html>

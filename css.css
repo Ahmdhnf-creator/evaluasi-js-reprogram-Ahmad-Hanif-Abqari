@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.kepala {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.nama-blog {
+  margin-bottom: 8px;
+}
+
+.keterangan {
+  color: #ddd;
+}
+
+/* Wadah */
+.wadah {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* Kotak */
+.kotak-form,
+.kotak-cari,
+.kotak-artikel {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.judul-bagian {
+  margin-bottom: 20px;
+}
+
+/* Input */
+.kotak-input {
+  margin-bottom: 15px;
+}
+
+.kotak-input label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.kotak-input input,
+.kotak-input textarea,
+.kotak-cari input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+
+
+/* Tombol */
+.kotak-tombol {
+  display: flex;
+  gap: 10px;
+}
+
+.tombol {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tambah {
+  background: #333;
+  color: white;
+}
+
+.tambah:hover {
+  background: #555;
+}
+
+.batal {
+  display: none;
+  background: #ddd;
+  color: #333;
+}
+
+.batal:hover {
+  background: #ccc;
+}
+
+/* Loading */
+#loading {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #777;
+}
+
+#error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Artikel */
+.kartu {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 15px;
+}
+
+.kartu span {
+  color: #777;
+  font-size: 13px;
+}
+
+.kartu h3 {
+  margin: 8px 0;
+  text-transform: capitalize;
+}
+
+.kartu p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Tombol artikel */
+.tombol-box {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.edit {
+  background: #333;
+  color: white;
+}
+
+.edit:hover {
+  background: #555;
+}
+
+.hapus {
+  background: #e74c3c;
+  color: white;
+}
+
+.hapus:hover {
+  background: #c0392b;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  .wadah {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .kotak-form,
+  .kotak-cari,
+  .kotak-artikel {
+    padding: 18px;
+  }
+
+  .kepala {
+    padding: 25px 15px;
+  }
+
+  .kotak-tombol {
+    flex-direction: column;
+  }
+
+  .kotak-tombol .tombol {
+    width: 100%;
+  }
+
+  .tombol-box {
+    flex-direction: column;
+  }
+
+  .tombol-box .tombol {
+    width: 100%;
+  }
+}
